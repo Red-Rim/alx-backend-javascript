@@ -1,0 +1,1 @@
+ - ES6__classes
