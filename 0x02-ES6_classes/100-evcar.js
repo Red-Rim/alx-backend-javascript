@@ -1,12 +1,17 @@
-import Car from './10-car';
 
-export default class EVCar extends Car {
-  constructor(brand, motor, color, range) {
-    super(brand, motor, color);
-    if (typeof range === 'string') this._range = range;
-  }
+import Car from "./10-car.js";
 
-  cloneCar() {
-    return new Car();
-  }
+class EVCar extends Car {
+    constructor(brand, motor, color, range) {
+        super(brand, motor, color);
+        this._range = range;
+    }
+
+    cloneCar() {
+        const newCar = new Car(this._brand, this._motor, this._color);
+        return newCar;
+    }
 }
+
+export default EVCar;
+
