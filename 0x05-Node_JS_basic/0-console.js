@@ -1,6 +1,5 @@
-// 0-console.js
-function displayMessage(Args) {
-   console.log(Args);
- }
- 
- module.exports = displayMessage;
+function displayMessage(message) {
+  console.log(message);
+}
+
+module.exports = displayMessage;
